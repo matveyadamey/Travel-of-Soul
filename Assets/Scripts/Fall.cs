@@ -14,7 +14,7 @@ public class Fall : MonoBehaviour
     }
     IEnumerator fall()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.4f);
         rb.isKinematic = false;
         rb.AddForce(Vector3.down);
     }
