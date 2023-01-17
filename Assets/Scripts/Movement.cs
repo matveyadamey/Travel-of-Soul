@@ -6,16 +6,17 @@ public class Movement : MonoBehaviour
     float x,z;
     [SerializeField] float speed;
     bool IsGround;
-
-
+    int time;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        time = PlayerPrefs.GetInt("time");
     }
 
 
     void FixedUpdate()
     {
+        time = Timer.time;
         if (IsGround)
         {
             x = -Input.GetAxis("Horizontal") * speed * Time.deltaTime;
@@ -38,6 +39,8 @@ public class Movement : MonoBehaviour
 
         if (collision.gameObject.tag == "deadZone")
         {
+            PlayerPrefs.SetInt("time", time);
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
