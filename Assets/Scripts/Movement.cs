@@ -28,7 +28,10 @@ public class Movement : MonoBehaviour
         IsGround = true;
         if (collision.gameObject.tag == "deadZone")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            var activeScene = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("levelNum", activeScene);
+            print(activeScene);
+            SceneManager.LoadScene(activeScene);
         }
 
     }

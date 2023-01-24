@@ -4,7 +4,11 @@ public class Collectioner : MonoBehaviour
 {
     public static int stars;
     [SerializeField] GameObject effect;
-    private void OnTriggerEnter(Collider other)
+	private void Start()
+	{
+        stars = 0;
+	}
+	private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "star")
         {
