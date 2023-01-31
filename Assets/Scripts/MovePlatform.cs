@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class MovePlatform : MonoBehaviour
 {
-    [SerializeField] Vector3 offset;
     [SerializeField] private Transform  pointB;
     Vector3 firstPos, secondPos,destination;
     void Start()
