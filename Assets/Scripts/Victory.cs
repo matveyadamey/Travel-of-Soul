@@ -24,8 +24,8 @@ public class Victory : MonoBehaviour
             Time.timeScale = 0f;
             victoryScreen.SetActive(true);
    
-            timeText.text = timeText.text + ((int)(Time.time - time)).ToString();
-            starsText.text= starsText.text+Collectioner.stars.ToString();
+            timeText.text = "Time: " + ((int)(Time.time - time)).ToString();
+            starsText.text= "Stars: "+Collectioner.stars.ToString();
             print(Collectioner.stars);
         }
     }

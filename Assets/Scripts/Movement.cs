@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Time.timeScale = 1f;
     }
 
 
@@ -29,7 +30,7 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.tag == "deadZone")
         {
             var activeScene = SceneManager.GetActiveScene().buildIndex;
-            PlayerPrefs.SetInt("levelNum", activeScene);
+            PlayerPrefs.SetInt("levelNum", activeScene+1);
             print(activeScene);
             SceneManager.LoadScene(activeScene);
         }
