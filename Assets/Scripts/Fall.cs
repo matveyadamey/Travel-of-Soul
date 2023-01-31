@@ -10,9 +10,9 @@ public class Fall : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        StartCoroutine(fall());
+        StartCoroutine(FallCoroutine());
     }
-    IEnumerator fall()
+    IEnumerator FallCoroutine()
     {
         yield return new WaitForSeconds(0.4f);
         rb.isKinematic = false;

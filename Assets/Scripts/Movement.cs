@@ -2,10 +2,10 @@
 using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
-    Rigidbody rb;
-    float x,z;
     [SerializeField] float speed;
     bool IsGround;
+    Rigidbody rb;
+    float x, z;
     void Start()
     {
         rb = GetComponent<Rigidbody>();

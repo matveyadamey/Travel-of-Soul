@@ -2,10 +2,8 @@
 public class Victory : MonoBehaviour
 {
     [SerializeField] GameObject victoryScreen;
+    [SerializeField] TMPro.TextMeshProUGUI timeText,timer,starsText;
     float time;
-    [SerializeField] TMPro.TextMeshProUGUI timeText;
-    [SerializeField] TMPro.TextMeshProUGUI starsText;
-    [SerializeField] TMPro.TextMeshProUGUI timer;
 
     private void Start()
 	{
@@ -14,7 +12,6 @@ public class Victory : MonoBehaviour
 	private void Update()
 	{
         timer.text = ((int)(Time.time - time)).ToString();
-
     }
 
 	private void OnCollisionEnter(Collision collision)
@@ -25,7 +22,7 @@ public class Victory : MonoBehaviour
             victoryScreen.SetActive(true);
    
             timeText.text = "Time: " + ((int)(Time.time - time)).ToString();
-            starsText.text= "Stars: "+Collectioner.stars.ToString();
+            starsText.text= "Stars:"+Collectioner.stars.ToString();
             print(Collectioner.stars);
         }
     }

@@ -10,7 +10,7 @@ public class Collectioner : MonoBehaviour
 	}
 	private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "star")
+        if (other.gameObject.CompareTag("star"))
         {
             var parent = other.gameObject.transform.parent;
             var child = parent.GetChild(0);

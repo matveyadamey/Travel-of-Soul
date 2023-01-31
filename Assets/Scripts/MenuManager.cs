@@ -6,6 +6,7 @@ public class MenuManager : MonoBehaviour
 	{
 		SceneManager.LoadScene(sceneNumber);
 	}
+
 	public void Continue()
 	{
 		if (PlayerPrefs.HasKey("levelNum"))
