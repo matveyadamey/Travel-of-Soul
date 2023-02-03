@@ -5,6 +5,7 @@ public class MovePlatform : MonoBehaviour
 {
     [SerializeField] private Transform  pointB;
     Vector3 firstPos, secondPos,destination;
+    [SerializeField] private float speed;
     void Start()
     {
         firstPos = transform.position;
@@ -18,6 +19,6 @@ public class MovePlatform : MonoBehaviour
         {
             destination = destination == firstPos ? secondPos : firstPos;
         }
-        transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, destination, Time.deltaTime*speed);
     }
 }

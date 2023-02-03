@@ -874,6 +874,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8250682022811600160, guid: 19de852a4ba6d1f419bdfc82dc785e7c,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.20493807
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250682022811600160, guid: 19de852a4ba6d1f419bdfc82dc785e7c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.20493807
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250682022811600160, guid: 19de852a4ba6d1f419bdfc82dc785e7c,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.20493807
+      objectReference: {fileID: 0}
+    - target: {fileID: 8250682022811600160, guid: 19de852a4ba6d1f419bdfc82dc785e7c,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1860,6 +1875,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3153844054247708145, guid: aa082cc772e5a404fb438319d06c3faa,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: -13.470398
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153844054247708145, guid: aa082cc772e5a404fb438319d06c3faa,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: -13.4704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153844054247708145, guid: aa082cc772e5a404fb438319d06c3faa,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: -13.4704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153844054247708145, guid: aa082cc772e5a404fb438319d06c3faa,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1912,6 +1942,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: starSky
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153844054247708151, guid: aa082cc772e5a404fb438319d06c3faa,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153844054247708151, guid: aa082cc772e5a404fb438319d06c3faa,
+        type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 459
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa082cc772e5a404fb438319d06c3faa, type: 3}
