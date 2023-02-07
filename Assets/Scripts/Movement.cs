@@ -31,7 +31,6 @@ public class Movement : MonoBehaviour
         {
             var activeScene = SceneManager.GetActiveScene().buildIndex;
             PlayerPrefs.SetInt("levelNum", activeScene+1);
-            print(activeScene);
             SceneManager.LoadScene(activeScene);
         }
 
