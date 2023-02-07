@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3153844054247708151}
   - component: {fileID: 3153844054247708144}
   m_Layer: 0
-  m_Name: Particle System (1)
+  m_Name: starSky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3153844054247708146}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0209134, y: 2.0209136, z: 2.0209136}
+  m_LocalScale: {x: -9.742659, y: -9.7426605, z: -9.7426605}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -975,7 +975,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 300
+        scalar: 500
         minScalar: 30
         maxCurve:
           serializedVersion: 2
