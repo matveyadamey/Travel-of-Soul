@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Movement2 : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     [SerializeField] float speed;
     bool IsGround;
