@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
+using UnityEngine.UI;
 public class PauseManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    bool IsPaused = false;
+    [SerializeField] Sprite pause, resume;
+    public void Check()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (!IsPaused)
+        {
+            Time.timeScale = 0f;
+            GetComponent<Image>().sprite = resume;
+            IsPaused = true;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            GetComponent<Image>().sprite = pause;
+            IsPaused = false;
+        }
     }
 }
