@@ -2,7 +2,7 @@
 using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
-	public void RunScene(int sceneNumber)
+    public void RunScene(int sceneNumber)
 	{
 		SceneManager.LoadScene(sceneNumber);
 	}
@@ -13,5 +13,9 @@ public class MenuManager : MonoBehaviour
 		{
 			RunScene(PlayerPrefs.GetInt("levelNum"));
 		}
+	}
+	public void Exit()
+    {
+		Application.Quit();
 	}
 }

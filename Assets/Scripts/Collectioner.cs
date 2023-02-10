@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class Collectioner : MonoBehaviour
 {
     public static int stars;
@@ -18,6 +17,7 @@ public class Collectioner : MonoBehaviour
             eff.transform.parent = null;
             stars++;
             Destroy(parent.gameObject);
+            PlayerPrefs.SetInt("stars",stars);
         }
     }
 }
