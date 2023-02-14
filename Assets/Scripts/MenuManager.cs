@@ -14,6 +14,13 @@ public class MenuManager : MonoBehaviour
 			RunScene(PlayerPrefs.GetInt("levelNum"));
 		}
 	}
+	public void Nextlevel()
+    {
+		if (PlayerPrefs.HasKey("levelNum"))
+		{
+			RunScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
+	}
 	public void Exit()
     {
 		Application.Quit();

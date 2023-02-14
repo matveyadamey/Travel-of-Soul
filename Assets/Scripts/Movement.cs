@@ -27,16 +27,18 @@ public class Movement : MonoBehaviour
     private void OnCollisionStay(Collision collision)
     {
         IsGround = true;
-        if (collision.gameObject.tag == "deadZone")
-        {
-            var activeScene = SceneManager.GetActiveScene().buildIndex;
-            PlayerPrefs.SetInt("levelNum", activeScene+1);
-            SceneManager.LoadScene(activeScene);
-        }
-
     }
     private void OnCollisionExit(Collision collision)
     {
         IsGround = false;
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "deadZone")
+        {
+            var activeScene = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("levelNum", activeScene);
+            SceneManager.LoadScene(activeScene);
+        }
     }
 }
