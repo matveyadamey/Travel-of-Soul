@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Realise/level9.unity
     guid: be23e0ecd3947de40b902ffa20d57b81
-  - enabled: 1
-    path: Assets/Scenes/Realise/level10.unity
-    guid: fc545b1affca0cd479db1cf26cd2f82a
   m_configObjects: {}

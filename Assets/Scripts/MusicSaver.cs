@@ -8,6 +8,7 @@ public class MusicSaver : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         audio = GetComponent<AudioSource>();
+        
     }
     private void Update()
     {
