@@ -1,13 +1,15 @@
 ﻿using UnityEngine;
 public class Victory : MonoBehaviour
 {
-    [SerializeField] GameObject victoryScreen;
-    [SerializeField] TMPro.TextMeshProUGUI timeText,timer,starsText;
+    GameObject victoryScreen;
+    TMPro.TextMeshProUGUI timeText,timer,starsText;
     float time;
 
     private void Start()
 	{
         time = Time.time;
+        timer = GameObject.Find("timer").GetComponent<TMPro.TextMeshProUGUI>();
+        victoryScreen = GameObject.Find("victoryScreen");
     }
 	private void Update()
 	{
@@ -19,8 +21,9 @@ public class Victory : MonoBehaviour
         if (collision.gameObject.tag == "winZone")
         {
             Time.timeScale = 0f;
-            victoryScreen.SetActive(true);
-   
+            victoryScreen.transform.GetChild(0).gameObject.SetActive(true);
+            timeText = GameObject.Find("timeText").GetComponent<TMPro.TextMeshProUGUI>();
+            starsText = GameObject.Find("starsText").GetComponent<TMPro.TextMeshProUGUI>();
             timeText.text = "Time: " + ((int)(Time.time - time)).ToString();
             starsText.text= "Stars:"+Collectioner.stars.ToString();
             print(Collectioner.stars);

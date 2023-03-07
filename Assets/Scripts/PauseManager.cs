@@ -1,22 +1,23 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 public class PauseManager : MonoBehaviour
 {
     bool IsPaused = false;
-    [SerializeField] Sprite pause, resume;
+    [SerializeField] GameObject PauseMenu,PauseButton;
     public void Check()
     {
         if (!IsPaused)
         {
             Time.timeScale = 0f;
-            GetComponent<Image>().sprite = resume;
             IsPaused = true;
+            PauseMenu.SetActive(true);
+            PauseButton.SetActive(false);
         }
         else
         {
             Time.timeScale = 1f;
-            GetComponent<Image>().sprite = pause;
             IsPaused = false;
+            PauseButton.SetActive(true);
+            PauseMenu.SetActive(false);
         }
     }
 }

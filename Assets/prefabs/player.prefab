@@ -138,6 +138,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377f4c3ecc76cc348966ea966268f78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryScreen: {fileID: 2463369161533323588, guid: c7f1a06c56875324cac05c5bd829528b,
+    type: 3}
+  timeText: {fileID: 8228800286445558814, guid: 219aeb4df56c67a47859000abe23526e,
+    type: 3}
+  timer: {fileID: 1108748443329282360, guid: a50b1bed29438104f9504cbdf6ee220a, type: 3}
+  starsText: {fileID: 2048312588448859747, guid: 581319482cc8da946af47e8e3a7d8858,
+    type: 3}
 --- !u!114 &145009201140609071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,3 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 939bee8bd5f6f3344b60a6802c5f81c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 3153844054247708146, guid: 2ba022088732a5c43be69b88b7f4a843, type: 3}

@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 public class MusicSaver : MonoBehaviour
 {
-    AudioSource audio;
+    [SerializeField] AudioSource audio;
     [SerializeField] AudioClip[] clips;
     int curMusic=0;
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "end")
+        {
+            Destroy(gameObject);
+        }
         DontDestroyOnLoad(gameObject);
-        audio = GetComponent<AudioSource>();
-        
+        audio.Play();
     }
     private void Update()
     {
