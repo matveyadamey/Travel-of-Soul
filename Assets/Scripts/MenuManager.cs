@@ -5,7 +5,7 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
 		Time.timeScale = 1f;
-	}
+    }
     public void RunScene(int sceneNumber)
 	{
 		SceneManager.LoadScene(sceneNumber);

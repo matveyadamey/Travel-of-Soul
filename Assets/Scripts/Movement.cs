@@ -9,12 +9,13 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Time.timeScale = 1f;
+        Time.timeScale=1f;
     }
 
 
     void FixedUpdate()
     {
+        print(Time.timeScale);
         if (IsGround)
         {
             x = -Input.GetAxis("Horizontal") * speed * Time.deltaTime;
